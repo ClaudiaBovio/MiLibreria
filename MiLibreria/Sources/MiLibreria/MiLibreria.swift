@@ -24,6 +24,15 @@ public class PantallaExampleViewController: UIViewController {
         return button
     }()
 
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+        print("PantallaExampleViewController inicializado")
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
     public override func viewDidLoad() {
         super.viewDidLoad()
 
