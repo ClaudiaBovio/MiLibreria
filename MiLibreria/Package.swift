@@ -15,8 +15,8 @@ let package = Package(
             targets: ["MiLibreria"]),
     ],
     dependencies: [
-           .package(url: "https://github.com/user/MyDependency.git", from: "2.0.0")
-       ],
+        .package(name: "MyDependency", url: "https://github.com/user/MyDependency.git", .upToNextMajor(from: "2.0.0")),
+    ],
     targets: [
         .target(
             name: "MiLibreria"),
