@@ -14,6 +14,9 @@ let package = Package(
             name: "MiLibreria",
             targets: ["MiLibreria"]),
     ],
+    dependencies: [
+           .package(url: "https://github.com/user/MyDependency.git", from: "2.0.0")
+       ],
     targets: [
         .target(
             name: "MiLibreria"),
